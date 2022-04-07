@@ -1,4 +1,4 @@
-Hey All,
+Hey There,
 
 The client/frontend link for the above is as:
 https://github.com/SaviSanjay1310/assign-mentor-client
