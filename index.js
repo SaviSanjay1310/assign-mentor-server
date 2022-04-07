@@ -23,13 +23,13 @@ mongoose.connect(URL, {
   useCreateIndex: true,
 });
 const connection = mongoose.connection;
-connection.on("open", () => console.log("MongoDB Connected"));
+connection.on("open", () => console.log("MongoDB Connection Successfull."));
 
 app.get("/", (req, res) =>
-  res.send(`Working`)
+  res.send(`Hurray...Server is Working!!!`)
 );
 
 app.use("/Mentors", mentorRouter);
 app.use("/Students", studentRouter);
 
-app.listen(PORT, () => console.log(`Server started in the port ${PORT}`));
+app.listen(PORT, () => console.log(`Server started at the port: ${PORT}`));
